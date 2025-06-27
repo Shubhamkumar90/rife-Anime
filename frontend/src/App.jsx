@@ -23,7 +23,7 @@ function App() {
 
   const handlePick1=  (file)=>{
     setFile1(file)
-    // console.log(`${API_URL}/get_images`)
+    console.log(`${import.meta.env.VITE_REACT_APP_API_URL}/get_images`)
   }
   const handlePick2=(file)=>{
     setFile2(file)
