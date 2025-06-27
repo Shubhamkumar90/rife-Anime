@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ImagePicker from '../Components/Imagepicker';
+import ImagePicker from '../Components/ImagePicker';
 import './App.css'
 import axios from 'axios'
 import JSZip from 'jszip'
