@@ -30,3 +30,13 @@ npm run dev
 ````
 
 ## Visuals
+
+### Home
+<img width="955" alt="image" src="https://github.com/user-attachments/assets/59022afd-f540-40e3-a831-5065468f77e6" />
+
+### Selecting Images
+<img width="890" alt="image" src="https://github.com/user-attachments/assets/a122fc74-0db7-4f78-909a-a76f68274c8c" />
+
+### Generated Images
+<img width="936" alt="image" src="https://github.com/user-attachments/assets/874d8de8-8e1f-41d4-a06a-4ebac8ce6241" />
+
