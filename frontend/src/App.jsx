@@ -118,7 +118,7 @@ function App() {
             {images.map((image, i) => (
               <img
                 key={i}
-                src={`data:image/png;base64,${image}`}
+                src={`data:image/jpeg;base64,${image}`}
                 alt={`frame-${i}`}
                 className="w-[280px] rounded-xl shadow-md border"
               />
