@@ -45,8 +45,9 @@ function App() {
         formdata.append('image2', file2);
         setLoading(true);
         const res = await axios.post(`${import.meta.env.VITE_REACT_APP_API_URL}/get_images`,formdata,{headers: { 'Content-Type':'multipart/form-data'}});
-
+        // console.log(res.data)
         setImages(res.data.images);
+        // setLoading(false);
       }
     } catch (error) {
       console.error("Error fetching interpolated images:", error);
