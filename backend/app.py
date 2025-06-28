@@ -48,6 +48,11 @@ def pred(img0,img1):
 @app.route('/get_images',methods=['POST'])
 def showImage():
     # print(request.files['image1'])
+    h0, w0 = img0.shape[:2]
+    h1, w1 = img1.shape[:2]
+    H, W = max(h0, h1), max(w0, w1)
+    img0=cv2.resize(img0, (W, H))
+    img1=cv2.resize(img1, (W, H))
     img1=cv2.imdecode(np.frombuffer(request.files['image1'].read(),np.int8),cv2.IMREAD_UNCHANGED)
     img2=cv2.imdecode(np.frombuffer(request.files['image2'].read(),np.int8),cv2.IMREAD_UNCHANGED)
     # print("done")

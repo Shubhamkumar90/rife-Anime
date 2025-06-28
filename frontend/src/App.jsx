@@ -38,17 +38,23 @@ function App() {
         setCheck(true);
       }
     }
-    if(check==false){
-      // console.log("io")
-      const formdata=new FormData()
-      formdata.append('image1',file1)
-      formdata.append('image2',file2)
-      setLoading(true);
-      const res=await axios.post(`${import.meta.env.VITE_REACT_APP_API_URL}/get_images`,formdata,{headers:{'Content-Type':'multipart/form-data'}})
-      setImages(res.data.images);
+    try {
+      if (check === false) {
+        const formdata = new FormData();
+        formdata.append('image1', file1);
+        formdata.append('image2', file2);
+        setLoading(true);
+        const res = await axios.post(`${import.meta.env.VITE_REACT_APP_API_URL}/get_images`,formdata,{headers: { 'Content-Type':'multipart/form-data'}});
+
+        setImages(res.data.images);
+      }
+    } catch (error) {
+      console.error("Error fetching interpolated images:", error);
+      alert("Failed to generate images. Please try again.");
+    } finally {
       setLoading(false);
-      // console.log("done")
     }
+
   }
    return (
     <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 py-10 px-4">
