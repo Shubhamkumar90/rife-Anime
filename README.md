@@ -1,7 +1,6 @@
 
 # RIFE-ANIME
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Flask](https://img.shields.io/badge/backend-flask-lightgrey)
 ![React](https://img.shields.io/badge/frontend-react-blue)
 ## Introduction
