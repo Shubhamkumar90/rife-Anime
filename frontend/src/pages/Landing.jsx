@@ -42,11 +42,11 @@ export default function LandingPage() {
               <h3 className="text-purple-300 text-xl mb-6 text-center font-medium">Start & End Frames</h3>
               <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                 <div className="flex flex-col items-center">
-                  <img src="/src/assets/frame1.png" alt="Start Frame" className="w-48 md:w-64 rounded-xl shadow-md" />
+                  <img src="../assets/frame1.png" alt="Start Frame" className="w-48 md:w-64 rounded-xl shadow-md" />
                   <p className="text-purple-300 mt-3 text-md">Start Frame</p>
                 </div>
                 <div className="flex flex-col items-center">
-                  <img src="/src/assets/frame-5.png" alt="End Frame" className="w-48 md:w-64 rounded-xl shadow-md" />
+                  <img src="../assets/frame-5.png" alt="End Frame" className="w-48 md:w-64 rounded-xl shadow-md" />
                   <p className="text-purple-300 mt-3 text-md">End Frame</p>
                 </div>
               </div>
@@ -56,7 +56,7 @@ export default function LandingPage() {
           <div className="bg-white/5 border border-purple-500 rounded-3xl p-6 shadow-lg backdrop-blur-md">
             <h3 className="text-purple-300 text-2xl mb-6 text-center font-medium">Interpolated Frames</h3>
             <div className="grid grid-cols-3  gap-4 justify-center">
-              {["/src/assets/frame-2.png", "/src/assets/frame-3.png", "/src/assets/frame-4.png"].map((src, idx) => (
+              {["../assets/frame-2.png", "../assets/frame-3.png", "../assets/frame-4.png"].map((src, idx) => (
                 <div key={idx} className="flex flex-col items-center">
                   <img src={src} alt={`Frame ${idx + 1}`} className="w-32 md:w-50 lg:w-60 rounded-xl shadow-md" />
                   <p className="text-purple-300 mt-2 text-md">Frame {idx + 1}</p>
