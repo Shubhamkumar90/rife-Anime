@@ -3,7 +3,7 @@ import logo from '../assets/rifelogo.png'
 import Navbar from "../Components/Navbar";
 import bgimg from "../assets/background.jpg"
 import bgimg2 from "../assets/background2.jpg"
-// import f1 from "../assets/frame2.png"
+import f1 from "../assets/frame1.png"
 import { Link } from "react-router-dom";
 export default function LandingPage() {
   return (
@@ -42,7 +42,7 @@ export default function LandingPage() {
               <h3 className="text-purple-300 text-xl mb-6 text-center font-medium">Start & End Frames</h3>
               <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                 <div className="flex flex-col items-center">
-                  <img src="../assets/frame1.png" alt="Start Frame" className="w-48 md:w-64 rounded-xl shadow-md" />
+                  <img src=$`{f1}` alt="Start Frame" className="w-48 md:w-64 rounded-xl shadow-md" />
                   <p className="text-purple-300 mt-3 text-md">Start Frame</p>
                 </div>
                 <div className="flex flex-col items-center">
