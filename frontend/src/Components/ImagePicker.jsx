@@ -34,11 +34,11 @@ function ImagePicker({onpick}) {
           setDragOver(true);
         }}
         onDragLeave={() => setDragOver(false)}
-        className={`w-full max-w-sm border-2 rounded-2xl p-6 bg-white shadow-md space-y-4 text-center transition ${
+        className={`w-full max-w-sm border-2 rounded-2xl p-6 bg-purple-100/10 shadow-md space-y-4 text-center transition ${
           dragOver ? 'border-blue-500 bg-blue-50' : 'border-gray-300'
         }`}
       >
-        <p className="text-gray-500">Drag & drop image here</p>
+        <p className="text-purple-300">Drag & drop image here</p>
 
         {imageURL && (
           <div className="w-full h-64 border rounded-lg overflow-hidden mx-auto">
@@ -50,7 +50,7 @@ function ImagePicker({onpick}) {
           </div>
         )}
 
-        <label className="cursor-pointer inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+        <label className="cursor-pointer inline-block px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-gradient-to-r from-purple-600/60 via-purple-500/60 to-pink-400/40 transition">
           Select Image
           <input
             type="file"
