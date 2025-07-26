@@ -3,7 +3,12 @@ import logo from '../assets/rifelogo.png'
 import Navbar from "../Components/Navbar";
 import bgimg from "../assets/background.jpg"
 import bgimg2 from "../assets/background2.jpg"
-// import f1 from "../assets/frame2.png"
+import f1 from "../assets/frame1.png"
+import f2 from "../assets/frame-5.png"
+import f3 from "../assets/frame-2.png"
+import f4 from "../assets/frame-3.png"
+import f5 from "../assets/frame-4.png"
+import g from "../assets/al.gif"
 import { Link } from "react-router-dom";
 export default function LandingPage() {
   return (
@@ -42,11 +47,11 @@ export default function LandingPage() {
               <h3 className="text-purple-300 text-xl mb-6 text-center font-medium">Start & End Frames</h3>
               <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                 <div className="flex flex-col items-center">
-                  <img src="../assets/frame1.png" alt="Start Frame" className="w-48 md:w-64 rounded-xl shadow-md" />
+                  <img src={f1} alt="Start Frame" className="w-48 md:w-64 rounded-xl shadow-md" />
                   <p className="text-purple-300 mt-3 text-md">Start Frame</p>
                 </div>
                 <div className="flex flex-col items-center">
-                  <img src="../assets/frame-5.png" alt="End Frame" className="w-48 md:w-64 rounded-xl shadow-md" />
+                  <img src={f5} alt="End Frame" className="w-48 md:w-64 rounded-xl shadow-md" />
                   <p className="text-purple-300 mt-3 text-md">End Frame</p>
                 </div>
               </div>
@@ -56,7 +61,7 @@ export default function LandingPage() {
           <div className="bg-white/5 border border-purple-500 rounded-3xl p-6 shadow-lg backdrop-blur-md">
             <h3 className="text-purple-300 text-2xl mb-6 text-center font-medium">Interpolated Frames</h3>
             <div className="grid grid-cols-3  gap-4 justify-center">
-              {["../assets/frame-2.png", "../assets/frame-3.png", "../assets/frame-4.png"].map((src, idx) => (
+              {[f2,f3,f4].map((src, idx) => (
                 <div key={idx} className="flex flex-col items-center">
                   <img src={src} alt={`Frame ${idx + 1}`} className="w-32 md:w-50 lg:w-60 rounded-xl shadow-md" />
                   <p className="text-purple-300 mt-2 text-md">Frame {idx + 1}</p>
@@ -66,7 +71,7 @@ export default function LandingPage() {
             </div>
             <div className="flex justify-center items-center pt-3">
                 <div>
-                  <img src= "/src/assets/al.gif" alt="gif" className="w-32 md:w-70 rounded-xl shadow-md" />
+                  <img src={g}  alt="gif" className="w-32 md:w-70 rounded-xl shadow-md" />
                   <p className="items-center text-center text-purple-300 mt-2 text-xl">GIF Preview</p>
                 </div>
               </div>
