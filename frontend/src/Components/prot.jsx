@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-export default function Prot({ children,rev }) {
+export default function Prot({ children }) {
     const navigate=useNavigate()
     useEffect(()=>{
         const check=async()=>{
