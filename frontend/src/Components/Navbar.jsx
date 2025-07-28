@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom"
 function Navbar(){
     const [isopen,setisopen]=useState(false);
      return (
-     <nav className="fixed top-10 left-1/2 -translate-x-1/2 z-30 w-[90%] max-w-5xl rounded-2xl px-10 py-4 border border-purple-50 shadow-lg  md:backdrop-blur-sm">
+     <nav className="fixed top-5 left-1/2 -translate-x-1/2 z-30 w-[75%] max-w-5xl rounded-2xl px-10 py-4 border border-purple-50 shadow-lg  backdrop-blur-sm">
       <div className="flex items-center justify-between">
         <Link to={"/"}>
         <div className="flex items-center space-x-3">
@@ -47,7 +47,7 @@ export function Navbar2(){
     navigate('/')
   }
   return (
-     <nav className="fixed top-5 left-1/2 -translate-x-1/2 z-30 w-[90%] max-w-5xl rounded-2xl px-10 py-4 border border-purple-50 shadow-lg  md:backdrop-blur-sm">
+     <nav className="fixed top-5 left-1/2 -translate-x-1/2 z-30 w-[75%] max-w-5xl rounded-2xl px-10 py-4 border border-purple-50 shadow-lg backdrop-blur-sm">
       <div className="flex items-center justify-between">
         <Link to={"/"}>
         <div className="flex items-center space-x-3">

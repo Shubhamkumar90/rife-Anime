@@ -85,7 +85,6 @@ export default function LandingPage() {
         </div>
       </div>
       </div>
-      
 
 {/* How It Works Section */}
 <div className="w-full bg-cover bg-center"
@@ -93,7 +92,7 @@ export default function LandingPage() {
   >
   {/* <img src={bgimg2} alt="background image" className="absolute inset-0 max-w-none min-h-screen w-auto h-auto object-contain"/>
       <div className="absolute inset-0 bg-[#17062e]/50"></div> */}
-      <section id="how" className="w-full backdrop-blur-sm rounded-2xl py-20 px-6 md:px-20 text-center text-purple-200">
+      <section id="how" className="w-full scroll-mt-20 backdrop-blur-sm rounded-2xl py-20 px-6 md:px-20 text-center text-purple-200">
   <h2 className="text-3xl md:text-4xl font-bold text-purple-400 mb-6">How It Works</h2>
   <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
     <div className="bg-white/10 rounded-xl p-6 backdrop-blur-md shadow-lg">
