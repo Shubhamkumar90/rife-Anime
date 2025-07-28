@@ -43,7 +43,7 @@ export default function LandingPage() {
             </h2>
 
   {/* Card 1: Start & End Frame */}
-            <div className="bg-white/5 border border-purple-500 rounded-2xl p-6 shadow-lg backdrop-blur-md">
+            <div className="bg-white/5 border border-purple-500 rounded-2xl p-6 shadow-lg backdrop-blur-sm">
               <h3 className="text-purple-300 text-xl mb-6 text-center font-medium">Start & End Frames</h3>
               <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                 <div className="flex flex-col items-center">
@@ -58,7 +58,7 @@ export default function LandingPage() {
             </div>
 
   {/* Card 2: Interpolated Frames */}
-          <div className="bg-white/5 border border-purple-500 rounded-3xl p-6 shadow-lg backdrop-blur-md">
+          <div className="bg-white/5 border border-purple-500 rounded-3xl p-6 shadow-lg backdrop-blur-sm">
             <h3 className="text-purple-300 text-2xl mb-6 text-center font-medium">Interpolated Frames</h3>
             <div className="grid grid-cols-3  gap-4 justify-center">
               {[f2,f3,f4].map((src, idx) => (
