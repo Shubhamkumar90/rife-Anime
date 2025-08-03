@@ -71,13 +71,28 @@ npm run dev
 ## Visuals
 
 ### Home
-<img width="955" alt="image" src="https://github.com/user-attachments/assets/59022afd-f540-40e3-a831-5065468f77e6" />
+<p align="center">
+  <img width="884" height="434" alt="home1" src="https://github.com/user-attachments/assets/2cfe8ce5-e003-4528-94ad-b5ba951b8f1f" />
+  <img width="884" height="521" alt="home2" src="https://github.com/user-attachments/assets/d3e500b9-4481-40a3-9a34-ac53814fa984" />
+  <img width="884" height="534" alt="home3" src="https://github.com/user-attachments/assets/89feb646-ce33-4a42-ba5d-bdc102da1e1f" />
+</p>
+
+
 
 ### Selecting Images
-<img width="890" alt="image" src="https://github.com/user-attachments/assets/a122fc74-0db7-4f78-909a-a76f68274c8c" />
+<p align="center"><img width="913" height="525" alt="imageselect" src="https://github.com/user-attachments/assets/bfeebea1-0b29-466a-940d-f38d0fdf8c5a" /></p>
+
+### Login and Signup
+<p align="center">
+  <img width="356" height="342" alt="login" src="https://github.com/user-attachments/assets/8d08e986-7532-4fa1-914a-7ab5162c8c89" />
+  <img width="356" height="342" alt="signup" src="https://github.com/user-attachments/assets/54864794-f8fa-4d11-95e2-26820116e72a" />
+</p>
+
 
 ### Generated Images
-<img width="936" alt="image" src="https://github.com/user-attachments/assets/874d8de8-8e1f-41d4-a06a-4ebac8ce6241" />
+<p align="center"><img width="925" height="524" alt="generatedpage" src="https://github.com/user-attachments/assets/770de39c-e5d0-4e7f-8f87-48c306a93092" />
+</p>
+
 
 ## Acknowledgements
 RIFE - [Real-Time Intermediate Flow Estimation](https://github.com/hzwer/ECCV2022-RIFE/tree/main)
