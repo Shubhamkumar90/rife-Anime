@@ -42,12 +42,13 @@ function Navbar(){
 
 export function Navbar2(){
   const navigate=useNavigate()
+  const [isopen1,setisopen1]=useState(false);
   function logout(){
     localStorage.removeItem('token');
     navigate('/')
   }
   return (
-     <nav className="fixed top-5 left-1/2 -translate-x-1/2 z-30 w-[75%] max-w-5xl rounded-2xl px-10 py-4 border border-purple-50 shadow-lg backdrop-blur-sm">
+     <nav className="fixed top-5 left-1/2 -translate-x-1/2 z-30 w-[75%] max-w-5xl rounded-2xl md:px-10 px-8 py-4 border border-purple-50 shadow-lg backdrop-blur-md ">
       <div className="flex items-center justify-between">
         <Link to={"/"}>
         <div className="flex items-center space-x-3">
@@ -56,8 +57,17 @@ export function Navbar2(){
         </div>
         </Link>
 
-        <button onClick={logout} className={`px-5 py-2 cursor-pointer text-white font-semibold rounded-xl transition-all duration-300 shadow-lg tracking-wide text-md bg-gradient-to-r from-purple-700 via-purple-500 to-pink-500 hover:brightness-110
+        <div className="hidden md:flex space-x-8">
+          <button onClick={logout} className={`px-5 py-2 cursor-pointer text-white font-semibold rounded-xl transition-all duration-300 shadow-lg tracking-wide text-md bg-gradient-to-r from-purple-700 via-purple-500 to-pink-500 hover:brightness-110
               `}>Log out</button>
+        </div>
+        <div className="md:hidden">
+            <button onClick={()=>setisopen1(!isopen1)}>
+                {isopen1? <X className="text-purple-400"></X>:<Menu className="text-purple-400"></Menu>}
+            </button>
+        </div>
+        {isopen1&&(<div className="md:hidden fixed top-[85px] left-1/2 -translate-x-1/2 z-40 w-[90%] max-w-5xl rounded-xl border border-purple-100 shadow-xl bg-[rgba(0,0,0,0.4)] backdrop-blur-lg px-6 py-4 space-y-3 text-purple-300 font-medium"> <button onClick={logout} className={`px-5 py-2 cursor-pointer text-white font-semibold rounded-xl transition-all duration-300 shadow-lg tracking-wide text-md bg-gradient-to-r from-purple-700 via-purple-500 to-pink-500 hover:brightness-110
+              `}>Log out</button></div>)}
       </div>
     </nav>
   );

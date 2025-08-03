@@ -35,7 +35,7 @@ function Auth({type}){
                         <label className="text-sm font-medium text-gray-700" htmlFor="password">password</label>
                         <input type="password" placeholder="Password" value={pass} onChange={(e)=>setpass(e.target.value)} className="mt-1 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" required/>
                         <div className="text-slate-800 mt-3">
-                    {type=="Signin"?"Don't have a account?":"Already have an account?"}
+                    {type=="Signin"?"Don't have an account?":"Already have an account?"}
                     <Link className="pl-2 underline" to={type=="Signin"?"/signup":"/login"}>
                         {type=="Signin"?"Sign up":"Sign in"}
                     </Link>
