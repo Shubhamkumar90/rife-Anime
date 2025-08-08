@@ -10,13 +10,13 @@ export default function Prot({ children }) {
             if(!token){navigate('/login')}
             try {
                 const res=await axios.get(`${import.meta.env.VITE_REACT_APP_API_URL}/check`,{headers:{Authorization:`Bearer ${token}`}})
-                // console.log(res.data)
+                // console.log("prot1")
                 // console.error("Auth check error:", err);
             } catch (error) {
                 navigate('/login')
             }
             
-        return <>{children}</>;
+        // return <>{children}</>;
         };
         check()
     })

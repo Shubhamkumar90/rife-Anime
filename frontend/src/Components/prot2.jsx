@@ -6,12 +6,12 @@ export function Prot2({children}){
     useEffect(()=>{
         const check=async()=>{
             const token=localStorage.getItem('token')
-            console.log(token)
+            // console.log(token)
             // if(!token){navigate('/login')}
             if(token){
                 try {
                     const res=await axios.get(`${import.meta.env.VITE_REACT_APP_API_URL}/check`,{headers:{Authorization:`Bearer ${token}`}})
-                    // console.log(res.data)
+                    // console.log("prot2")
                     if(res.data.success){navigate('/generate')}
                 } catch (error) {
                     // navigate('/login')
@@ -20,7 +20,7 @@ export function Prot2({children}){
             }
             // const res=await axios.get(`${import.meta.env.VITE_REACT_APP_API_URL}/check`,{headers:{Authorization:`Bearer ${token}`}})
             
-        return <>{children}</>;
+        // return <>{children}</>;
         };
         check()
     })
