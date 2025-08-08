@@ -24,6 +24,7 @@ if not database_url:
 app=Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = database_url
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {"pool_pre_ping": True}
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 
@@ -48,6 +49,7 @@ def wake_db_if_needed():
             print("Database warmed up.")
         except Exception as e:
             print("DB wake-up error:", e)
+            db.session.remove()
 
 @app.route('/check',methods=['GET'])
 def checkToken():
