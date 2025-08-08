@@ -17,6 +17,7 @@ import datetime
 load_dotenv()
 database_url = os.getenv('DATABASE_URL')
 SECRET_KEY = os.getenv('SECRET_KEY')
+db_awake=False
 if not database_url:
     raise RuntimeError("DATABASE_URL not set in .env")
 
@@ -37,6 +38,16 @@ class User(db.Model):
     email = db.Column(db.String(120), primary_key=True)
     password = db.Column(db.String(120), nullable=False)
 
+@app.before_request
+def wake_db_if_needed():
+    global db_awake
+    if not db_awake:
+        try:
+            db.session.execute(text("SELECT 1"))
+            db_awake = True
+            print("Database warmed up.")
+        except Exception as e:
+            print("DB wake-up error:", e)
 
 @app.route('/check',methods=['GET'])
 def checkToken():
