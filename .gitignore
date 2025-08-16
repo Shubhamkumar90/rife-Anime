@@ -26,3 +26,4 @@ __pycache__/
 fullmodel.pkl
 test.ipynb
 .env
+docker-compose.yml
