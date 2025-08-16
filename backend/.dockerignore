@@ -1,0 +1,7 @@
+__pycache__/
+test.ipynb
+Dockerfile
+.dockerignore
+.git
+.gitignore
+# .env

@@ -7,3 +7,5 @@ python-dotenv
 flask_sqlalchemy
 flask_bcrypt
 pyjwt
+psycopg2-binary
+torchvision

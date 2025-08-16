@@ -29,7 +29,7 @@ db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 
 device=torch.device('cuda' if torch.cuda.is_available() else "cpu")
-model=torch.load('backend\\fullmodel.pkl', weights_only=False,map_location=device)
+model=torch.load('fullmodel.pkl', weights_only=False,map_location=device)
 model.eval()
 # model.device()
 CORS(app)
@@ -192,5 +192,5 @@ def showImage():
 # threading.Thread(target=launch).start()
 
 if __name__=="__main__":
-    app.run(debug=True)
-    # app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 7860)))
+    # app.run()
+    app.run(debug=True,host='0.0.0.0', port=5000)
