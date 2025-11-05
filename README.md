@@ -24,7 +24,14 @@ RIFE is a deep learning model for frame interpolation. Instead of explicitly est
 - Built using **Flask**
 - Deployed via **Hugging Face Spaces**
 - Contains a fine-tuned RIFE model (`fullmodel.pkl`) trained on anime datasets like ATD-12K.
+### Backend Environment Variables
 
+The backend uses environment variables to configure the application. Create a `.env` file inside the `backend/` directory with the following variables:
+
+```env
+DATABASE_URL=<your_database_url>
+SECRET_KEY=<your_secret_key_for_jwt>
+```
 
 ### 📦 Model Download
 
@@ -50,7 +57,13 @@ You can generate more frames by changing `exp` variable in `app.py`
 - Built using **React** and **Tailwind CSS**
 - Deployed on **Vercel**
 
+### Frontend Environment Variables
 
+The frontend uses environment variables to configure the application. Create a `.env` file inside the `frontend/` directory with the following variables:
+
+```env
+VITE_REACT_APP_API_URL=http://localhost:5000
+```
 
 
 **Live Demo:**  
@@ -66,6 +79,25 @@ npm run dev
 
 > 🔧 **Note:** 
 > If you're running the backend locally, replace `${import.meta.env.VITE_REACT_APP_API_URL}` with `http://127.0.0.1:5000` in the `frontend/app.jsx` file to ensure proper communication between the frontend and backend during development.
+
+## Start the Project 
+
+Make sure both `.env` files exist:
+
+- `backend/.env`
+- `frontend/.env`
+
+
+
+### Run with Docker Compose
+
+```bash
+docker-compose up --build
+```
+## Access
+
+- **Backend API:** [http://localhost:5000](http://localhost:5000)  
+- **Frontend App:** [http://localhost](http://localhost)
 
 
 ## Visuals
