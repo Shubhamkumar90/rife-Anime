@@ -75,10 +75,10 @@ def checkToken():
 
 @app.route('/')
 def check():
-    result = db.session.execute(text("SELECT * FROM users")).mappings().all()
-    print(result)
-    users = [dict(row) for row in result]
-    return {"users": users}
+    # result = db.session.execute(text("SELECT * FROM users")).mappings().all()
+    # print(result)
+    # users = [dict(row) for row in result]
+    return {"msg": "hello"}
 
 @app.route('/login',methods=['POST'])
 def login():
