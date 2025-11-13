@@ -32,7 +32,11 @@ device=torch.device('cuda' if torch.cuda.is_available() else "cpu")
 model=torch.load('fullmodel.pkl', weights_only=False,map_location=device)
 model.eval()
 # model.device()
-CORS(app)
+# CORS(app)
+CORS(app, origins=[
+    "https://rife-anime-kl.vercel.app",
+    "http://localhost:5173"
+])
 
 class User(db.Model):
     __tablename__ = 'users'
