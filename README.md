@@ -97,7 +97,7 @@ docker-compose up --build
 ## Access
 
 - **Backend API:** [http://localhost:5000](http://localhost:5000)  
-- **Frontend App:** [http://localhost](http://localhost)
+- **Frontend App:** [http://localhost:5173](http://localhost:5173)
 
 
 ## Visuals
