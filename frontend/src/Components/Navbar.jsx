@@ -7,7 +7,7 @@ import { Link, useNavigate } from "react-router-dom"
 function Navbar(){
     const [isopen,setisopen]=useState(false);
      return (
-     <nav className="fixed top-5 left-1/2 -translate-x-1/2 z-30 w-[75%] max-w-5xl rounded-2xl px-10 py-4 border border-purple-50 shadow-lg  backdrop-blur-sm">
+     <nav className="fixed top-5 left-1/2 -translate-x-1/2 z-30 w-[90%] max-w-10xl rounded-2xl px-10 py-4 border border-purple-50 shadow-lg backdrop-blur-sm">
       <div className="flex items-center justify-between">
         <Link to={"/"}>
         <div className="flex items-center space-x-3">
@@ -30,7 +30,7 @@ function Navbar(){
             </button>
         </div>
         {isopen && (
-        <div className="md:hidden fixed top-[85px] left-1/2 -translate-x-1/2 z-40 w-[90%] max-w-5xl rounded-xl border border-purple-100 shadow-xl bg-[rgba(0,0,0,0.4)] backdrop-blur-lg px-6 py-4 space-y-3 text-purple-300 font-medium">
+        <div className="md:hidden fixed top-[85px] left-1/2 -translate-x-1/2 z-40 w-[90%] max-w-5xl rounded-xl border border-purple-300 shadow-xl bg-[rgba(51,60,94,0.77)] px-6 py-4 space-y-3 text-purple-300 font-medium backdrop-blur-lg">
           <a href="/generate" className="block hover:text-purple-500 transition">Generate</a>
           <a href="#about" className="block hover:text-purple-500 transition">About</a>
           <a href="#how" className="block hover:text-purple-500 transition">How it works</a>
