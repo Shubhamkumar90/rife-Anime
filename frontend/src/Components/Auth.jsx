@@ -33,7 +33,7 @@ function Auth({type}){
                         <label className="text-sm font-medium text-gray-700" htmlFor="email">Email</label>
                         <input type="email" placeholder="Enter email" value={email} onChange={(e)=>setEmail(e.target.value)} className="mt-1 px-4 mb-5 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" required/>
                         <label className="text-sm font-medium text-gray-700" htmlFor="password">Password</label>
-                        <input type="password" placeholder="Password" value={pass} onChange={(e)=>setpass(e.target.value)} className="mt-1 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" required/>
+                        <input type="password" placeholder="Password" value={pass} onChange={(e)=>setpass(e.target.value)} minLength={3} className="mt-1 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" required/>
                         <div className="text-slate-800 mt-3">
                     {type=="Signin"?"Don't have an account?":"Already have an account?"}
                     <Link className="pl-2 underline" to={type=="Signin"?"/signup":"/login"}>

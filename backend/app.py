@@ -113,7 +113,7 @@ def signup():
     newuser=User(email=email,password=hpas)
     existing_user = User.query.filter_by(email=email).first()
     if existing_user:
-        return jsonify({"error": "Email already registered","success":False}), 400
+        return jsonify({"error": "Email already registered","success":False})
     try:
         db.session.add(newuser)
         db.session.commit()
